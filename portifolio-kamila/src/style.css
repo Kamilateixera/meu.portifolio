@@ -3,8 +3,7 @@
 
 body {
   background-color: #1a002b; 
-  background-image:
-    radial-gradient(circle at center, #ff00c8 0%, #330033 100%);
+  background-image:radial-gradient(circle at center, #ff00c8 0%, #330033 100%);
   color: white;
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -304,3 +303,93 @@ ul li {
   transform: scale(1.5);
 }
 
+/* Dispositivos com largura até 768px (tablets e celulares em landscape) */
+@media (max-width: 768px) {
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image-link {
+    flex: unset;
+    width: 100%;
+  }
+
+  .project-info {
+    text-align: left;
+  }
+
+  .skills-row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .skill-icon {
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+  }
+
+  .skill-icon i {
+    font-size: 26px;
+  }
+
+  .skill-icon span {
+    font-size: 9px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .contact-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-icons a {
+    font-size: 28px;
+  }
+}
+
+/* Dispositivos muito pequenos (ex: celulares antigos) */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .icon-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .project-info p {
+    font-size: 14px;
+  }
+}
